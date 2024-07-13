@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b76f6be7b5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js" type="text/javascript">
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Muscle</title>
+</head>
+
+<body onload="startTime()">
+    <header id="start">
+        <a href="index.html" class="logo" id="clock"></a>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="shop.html">Shop</a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="row hero-row">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+        <div class="intro-services contact-main">
+            <h1>CONTACT US</h1>
+            <div class="row latest-news-row">
+                <form id="form" name="form">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="adress" name="adress" placeholder="Your email..">
+                    <input type="password" id="password" name="password" placeholder="Enter your pasword..">
+                    <input type="text" id="tel" name="tel" required placeholder="Enter your phone number ...">
+                    <select id="country" name="country">
+                        <option value="SRB">Srbija</option>
+                        <option value="CG">Crna Gora</option>
+                        <option value="BiH">Bosna i Hercegovina</option>
+                    </select>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                    <input type="submit" value="Submit" onclick="popUp()">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row footer-row">
+            <div class="col footer-single">
+                <div class="card card-footer">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="card-text footer-text">
+                        <h4><b>PHONE</b></h4>
+                        <p>+381 11 3950 800</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col footer-single">
+                <div class="card card-footer">
+                    <i class="fas fa-envelope"></i>
+                    <div class="card-text footer-text">
+                        <h4><b>E-MAIL</b></h4>
+                        <p>dekanat@fon.bg.ac.rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col footer-single">
+                <div class="card card-footer">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="card-text footer-text">
+                        <h4><b>ADDRESS</b></h4>
+                        <p>Jove Ilica 154, Beograd</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h6>©COPYRIGHT | MUSCLE 2018</h6>
+    </footer>
+    <a id="on-top" href="#start">
+        <div>
+            <i class="fas fa-angle-up"></i>
+        </div>
+    </a>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

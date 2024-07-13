@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b76f6be7b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Muscle</title>
+</head>
+
+<body>
+    <header id="start">
+        <a href="index.html" class="logo">MUSCLE</a>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="shop.html">Shop</a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="row hero-row">
+                <h1>Comming soon</h1>
+                <h1 id="countdown"></h1>
+            </div>
+        </div>
+    </main>
+    <script>
+        var countDownDate = new Date("Jun 5, 2022 15:37:25").getTime();
+        var countdownfunction = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Matfloor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById('countdown').innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(countdownfunction);
+                document.getElementById('countdown').innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
